@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Failed</title>
+
+<!-- External Style Sheet Link -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/animation.css" type="text/css">
+
+<!-- Bootstrap Link -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- JS Script Link -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Bootstrap Responsive Link -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script src="js/validate.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+	<h1 class="titles">CARPOOL LOGIN FAILED!</h1>
+
+	<div class="wrapper fadeInDown">
+		<div id="formContent">
+
+	<form method="post" action="LoginControlServlet" onsubmit="store();">
+		<div class="box">
+			
+			<h2 style="color:red;">Username/Password incorrect!</h2>
+
+				<!-- user name text box -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
+							<input class="fadeIn second" type="text" name="userid"  required="required" id="userid"
+				placeholder="enter user ID" class="email" /> 
+						</div>
+					</div>
+
+						<!-- password text box -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
+							<input class="fadeIn third" id="password"
+				type="password" name="password"  required="required" placeholder="enter your password"
+				 class="email" />  
+						</div>
+					</div>
+
+				<!-- sign in button -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
+							<input class="fadeIn fourth" type="submit" value="Sign in" class="btn">
+						</div>
+					</div>
+
+
+		<!-- Sign Up as a New User -->
+				 <div id="formFooter">
+				 <div class="fadeIn fifth" id="btn2">
+					<a href="register.html">Sign Up</a>
+					</div>
+				</div>
+
+		</div>
+		<!-- End Box -->
+
+	</form>
+	</div>
+	</div>
+
+
+
+</body>
+</html>
